@@ -234,10 +234,10 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 🔗 Links
 
-- [Live Demo](https://your-musaix-app.vercel.app)
-- [Supabase Dashboard](https://app.supabase.com/project/your-project-id)
-- [Vercel Dashboard](https://vercel.com/your-username/musaix-audio-analyzer)
-- [Documentation](https://your-docs-site.com)
+- [Live Demo](https://106-g59nl30yu-sterl27s-projects.vercel.app)
+- [Supabase Dashboard](https://app.supabase.com/project/hzxtkewgywlxaqtckjrs)
+- [Vercel Dashboard](https://vercel.com/sterl27s-projects/106)
+- [GitHub Repository](https://github.com/sterl27/musaix-audio-analyzer)
 
 ## 🆘 Support
 
