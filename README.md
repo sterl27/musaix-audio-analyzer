@@ -123,8 +123,8 @@ OPENAI_API_KEY="sk-..."
 VERCEL_WEBHOOK_SECRET="your-random-secret"
 
 # App URLs (Auto-populated by Vercel)
-NEXT_PUBLIC_APP_URL="https://your-app.vercel.app"
-VERCEL_ANALYSIS_FUNCTION_URL="https://your-app.vercel.app/api"
+NEXT_PUBLIC_APP_URL="https://106-kagat6gz5-sterl27s-projects.vercel.app"
+VERCEL_ANALYSIS_FUNCTION_URL="https://106-kagat6gz5-sterl27s-projects.vercel.app/api"
 ```
 
 ### Supabase Setup
@@ -234,7 +234,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 🔗 Links
 
-- [Live Demo](https://106-g59nl30yu-sterl27s-projects.vercel.app)
+- [Live Demo](https://106-kagat6gz5-sterl27s-projects.vercel.app)
 - [Supabase Dashboard](https://app.supabase.com/project/hzxtkewgywlxaqtckjrs)
 - [Vercel Dashboard](https://vercel.com/sterl27s-projects/106)
 - [GitHub Repository](https://github.com/sterl27/musaix-audio-analyzer)
