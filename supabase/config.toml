@@ -1,0 +1,33 @@
+# Project configuration
+[project]
+project_id = "your-project-id"
+org_id = "your-org-id"
+
+[auth]
+enabled = true
+site_url = "http://localhost:3000"
+additional_redirect_urls = ["https://localhost:3000"]
+jwt_expiry = 3600
+
+[auth.external.google]
+enabled = false
+client_id = ""
+secret = ""
+
+[auth.external.github]
+enabled = false
+client_id = ""
+secret = ""
+
+[db]
+# Database configuration
+port = 54322
+
+[storage]
+file_size_limit = "52428800" # 50MB
+
+[edge_functions]
+enabled = true
+
+[analytics]
+enabled = false
