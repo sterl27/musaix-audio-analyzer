@@ -7,8 +7,8 @@ import { Button } from '@/components/ui/button'
 import { Loader2, Search, Music, Play } from 'lucide-react'
 
 interface SimilaritySearchProps {
-  sourceEmbedding: number[]
-  sourceFileName: string
+  sourceEmbedding?: number[]
+  sourceFileName?: string
 }
 
 export function SimilaritySearch({ sourceEmbedding, sourceFileName }: SimilaritySearchProps) {
@@ -37,6 +37,20 @@ export function SimilaritySearch({ sourceEmbedding, sourceFileName }: Similarity
     // Convert cosine distance back to similarity percentage
     const similarity = (1 - distance) * 100
     return `${similarity.toFixed(1)}%`
+  }
+
+  if (!sourceEmbedding || !sourceFileName) {
+    return (
+      <div className="text-center py-8">
+        <div className="w-16 h-16 bg-gradient-to-r from-purple-200 to-pink-300 dark:from-purple-600 dark:to-pink-700 rounded-full flex items-center justify-center mx-auto mb-4">
+          <Search className="w-8 h-8 text-purple-600 dark:text-purple-300" />
+        </div>
+        <h3 className="text-lg font-medium text-gray-900 dark:text-white mb-2">No Source Audio</h3>
+        <p className="text-sm text-gray-500 dark:text-gray-400">
+          Complete an audio analysis to discover similar tracks
+        </p>
+      </div>
+    )
   }
 
   return (

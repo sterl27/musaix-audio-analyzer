@@ -9,7 +9,7 @@ import { Loader2, AlertCircle, CheckCircle2, Music } from 'lucide-react'
 import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer } from 'recharts'
 
 interface AnalysisResultsProps {
-  analysisId: string
+  analysisId?: string
   initialAnalysisData?: AudioAnalysis
 }
 
@@ -77,6 +77,20 @@ export function AnalysisResults({ analysisId, initialAnalysisData }: AnalysisRes
         <CardTitle>Loading Analysis</CardTitle>
         <CardDescription>Fetching your audio analysis data...</CardDescription>
       </Card>
+    )
+  }
+
+  if (!analysis && !analysisId) {
+    return (
+      <div className="text-center py-8">
+        <div className="w-16 h-16 bg-gradient-to-r from-gray-200 to-gray-300 dark:from-gray-600 dark:to-gray-700 rounded-full flex items-center justify-center mx-auto mb-4">
+          <Music className="w-8 h-8 text-gray-400 dark:text-gray-500" />
+        </div>
+        <h3 className="text-lg font-medium text-gray-900 dark:text-white mb-2">No Analysis Yet</h3>
+        <p className="text-sm text-gray-500 dark:text-gray-400">
+          Upload an audio file to see analysis results here
+        </p>
+      </div>
     )
   }
 
